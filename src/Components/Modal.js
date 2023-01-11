@@ -1,5 +1,5 @@
 import React from 'react'
-import bookImg from '../img/book.jpg';
+
 
 const Modal = ({ show, item, onClose }) => {
 
@@ -11,13 +11,13 @@ const Modal = ({ show, item, onClose }) => {
   let desc = item.volumeInfo.description
   return (
     <div>
-      <div className="overlay min-h-full w-full fixed left-0 top-0 bottom-0 right-0 bg-gradient-to-r from-[rgba(0,0,0,0.2)]  to-[rgba(0,0,0,0.1)] flex items-center justify-center ">
-        <div className="overlay-inner bg-indigo-100 w-[23.5rem] h-[48rem]  md:w-[50rem] md:h-[40rem] p-5 relative box-border overflow-hidden shadow-2xl rounded-xl ">
+      <div className=" min-h-full w-full fixed left-0 top-0 bottom-0 right-0 bg-gradient-to-r from-[rgba(0,0,0,0.2)]  to-[rgba(0,0,0,0.1)] flex items-center justify-center ">
+        <div className=" bg-indigo-100 w-[23.5rem] h-[48rem]  md:w-[50rem] md:h-[40rem] p-5 relative box-border overflow-hidden shadow-2xl rounded-xl ">
           <button onClick={onClose} className='close  absolute top-2 right-2 md:top-4 md:right-4 outline-none border-3 text-xl rounded-md bg-red-500 hover:bg-red-700 text-white px-2 md:px-3    py-0 md:py-2 '><i class="fa-solid fa-xmark"></i></button>
 
 
 
-          <div className="inner-box mt-2 md:mt-8 flex flex-col  md:flex-row justify-center " >
+          <div className="mt-2 md:mt-8 flex flex-col  md:flex-row justify-center " >
 
 
             <img className='  mx-auto md:mx-0 md:mr-5  mt-3 w-44 h-36 md:w-52 md:h-56 ' src={thumbnail} alt="" srcset="" />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import bookImg from '../img/book.jpg';
+// eslint-disable-next-line no-unused-vars
+import bookImg from '../img/book.jpeg';
 
 import Modal from './Modal';
 
@@ -16,11 +17,7 @@ const Card = ({ bookData }) => {
                 let amount = item.saleInfo.listPrice && item.saleInfo.listPrice.amount;
                 let title = item.volumeInfo.title;
 
-
-
-
                 if (thumbnail && amount != undefined) {
-
 
                     return <>
 

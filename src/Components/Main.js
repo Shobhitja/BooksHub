@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import bookImg2 from '../img/book2.png';
+import bookImg from '../img/book2.png';
 import Card from './Card';
-
 import bg from '../img/bg.avif';
-// import axios from 'axios';
 import Spinner from './Spinner';
-import '../App.css'
+
 
 const Main = () => {
     const [loading, setLoading] = useState(false)
@@ -27,13 +25,6 @@ const Main = () => {
         }
     }
 
-    //     axios.get(` https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyCTeifeOp9tcr6K-2IUHMsC7GUzx2dwCrY&maxResults=40`)
-    //         .then(res => setBookData(res.data.items))
-    //         .catch(err => console.log(err))
-    //     {
-    //         setShow(false)
-    //     }
-    // }
 
 
 
@@ -51,7 +42,7 @@ const Main = () => {
                         .value)} />
                     <button onClick={searchBook} className='bg-indigo-700 text-white p-3 md:p-4 ml-4 rounded-xl hover:bg-indigo-500'><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-                <img className='mt-8 w-64 md:w-56 mx-auto  border-4 border-red-50 ' src={bookImg2} alt="" srcset="" />
+                <img className='mt-8 w-64 md:w-56 mx-auto  border-4 border-red-50 ' src={bookImg} alt="" srcset="" />
             </div>
 
         </div>
